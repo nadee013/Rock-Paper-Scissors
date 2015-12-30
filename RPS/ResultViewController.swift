@@ -21,6 +21,10 @@ class ResultViewController: UIViewController {
         self.resultLabel.numberOfLines = 3
         
         switch (selectedValue, randomValue) {
+            case ("Paper", "Paper"), ("Rock", "Rock"), ("Scissors", "Scissors"):
+                self.resultImage.image = UIImage(named: "tie")
+                self.resultLabel.text = "Wow....! Congractz...\n It's a tie"
+
             case ("Paper", "Rock"):
                 self.resultImage.image = UIImage(named: "PaperWins")
                 self.resultLabel.text = "Hurray....! Congractz...\n You win"
@@ -43,12 +47,11 @@ class ResultViewController: UIViewController {
 
             case ("Scissors", "Rock"):
                 self.resultImage.image = UIImage(named: "RockWins")
-                self.resultLabel.textAlignment = NSTextAlignment.Center
                 self.resultLabel.text = "Oops....! Sorry...\n You loose"
 
             default :
-                self.resultImage.image = UIImage(named: "tie")
-                self.resultLabel.text = "Wow....! It's a tie"
+                self.resultImage.image = UIImage(named: "error")
+                self.resultLabel.text = "Mmmm...Looks something is wrong"
         }
 
         
