@@ -10,8 +10,8 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-    var selectedValue: String = ""
-    var randomValue:String = ""
+    var selectedValue: String!
+    var randomValue: String!
     
     @IBOutlet weak var resultImage: UIImageView!
     @IBOutlet weak var resultLabel: UILabel!
