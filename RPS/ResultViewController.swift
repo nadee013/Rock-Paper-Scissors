@@ -22,32 +22,32 @@ class ResultViewController: UIViewController {
         switch (selectedValue, randomValue) {
             case ("Paper", "Rock"):
                 self.resultImage.image = UIImage(named: "PaperWins")
-                self.resultLabel.text = "Hurray....! You win - \(selectedValue)"
+                self.resultLabel.text = "Hurray....! Congractz...You win"
             
             case ("Paper", "Scissors"):
                 self.resultImage.image = UIImage(named: "ScissorsWins")
-                self.resultLabel.text = "Oops....! You loose - \(selectedValue)"
+                self.resultLabel.text = "Oops....! Sorry...You loose"
             
             case ("Rock", "Paper"):
                 self.resultImage.image = UIImage(named: "PaperWins")
-                self.resultLabel.text = "Oops....! You loose - \(selectedValue)"
+                self.resultLabel.text = "Oops....! Sorry...You loose."
             
             case ("Rock", "Scissors"):
                 self.resultImage.image = UIImage(named: "RockWins")
-                self.resultLabel.text = "Hurray....! You win - \(selectedValue)"
+                self.resultLabel.text = "Hurray....! Congractz...You win"
 
             case ("Scissors", "Paper"):
                 self.resultImage.image = UIImage(named: "ScissorsWins")
-                self.resultLabel.text = "Hurray....! You win - \(selectedValue)"
+                self.resultLabel.text = "Hurray....! Congractz...You win"
 
             case ("Scissors", "Rock"):
                 self.resultImage.image = UIImage(named: "RockWins")
                 self.resultLabel.textAlignment = NSTextAlignment.Center
-                self.resultLabel.text = "Oops....! You loose - \(selectedValue)"
+                self.resultLabel.text = "Oops....! Sorry...You loose"
 
             default :
                 self.resultImage.image = UIImage(named: "tie")
-                self.resultLabel.text = "Wow....! It's a tie - \(selectedValue)"
+                self.resultLabel.text = "Wow....! It's a tie"
         }
 
         
