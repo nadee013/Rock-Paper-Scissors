@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		433642C01C327FFD00F6B50C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433642BF1C327FFD00F6B50C /* AppDelegate.swift */; };
-		433642C21C327FFD00F6B50C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433642C11C327FFD00F6B50C /* ViewController.swift */; };
+		433642C21C327FFD00F6B50C /* ShuffleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433642C11C327FFD00F6B50C /* ShuffleViewController.swift */; };
 		433642C51C327FFD00F6B50C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433642C31C327FFD00F6B50C /* Main.storyboard */; };
 		433642C81C327FFD00F6B50C /* RPS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 433642C61C327FFD00F6B50C /* RPS.xcdatamodeld */; };
 		433642CA1C327FFD00F6B50C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433642C91C327FFD00F6B50C /* Assets.xcassets */; };
 		433642CD1C327FFD00F6B50C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433642CB1C327FFD00F6B50C /* LaunchScreen.storyboard */; };
+		433642D51C32803300F6B50C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433642D41C32803300F6B50C /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		433642BC1C327FFD00F6B50C /* RPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		433642BF1C327FFD00F6B50C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		433642C11C327FFD00F6B50C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		433642C11C327FFD00F6B50C /* ShuffleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleViewController.swift; sourceTree = "<group>"; };
 		433642C41C327FFD00F6B50C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		433642C71C327FFD00F6B50C /* RPS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RPS.xcdatamodel; sourceTree = "<group>"; };
 		433642C91C327FFD00F6B50C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		433642CC1C327FFD00F6B50C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		433642CE1C327FFD00F6B50C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		433642D41C32803300F6B50C /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				433642BF1C327FFD00F6B50C /* AppDelegate.swift */,
-				433642C11C327FFD00F6B50C /* ViewController.swift */,
+				433642C11C327FFD00F6B50C /* ShuffleViewController.swift */,
 				433642C31C327FFD00F6B50C /* Main.storyboard */,
 				433642C91C327FFD00F6B50C /* Assets.xcassets */,
 				433642CB1C327FFD00F6B50C /* LaunchScreen.storyboard */,
 				433642CE1C327FFD00F6B50C /* Info.plist */,
 				433642C61C327FFD00F6B50C /* RPS.xcdatamodeld */,
+				433642D41C32803300F6B50C /* ResultViewController.swift */,
 			);
 			path = RPS;
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				433642C21C327FFD00F6B50C /* ViewController.swift in Sources */,
+				433642C21C327FFD00F6B50C /* ShuffleViewController.swift in Sources */,
 				433642C81C327FFD00F6B50C /* RPS.xcdatamodeld in Sources */,
 				433642C01C327FFD00F6B50C /* AppDelegate.swift in Sources */,
+				433642D51C32803300F6B50C /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
