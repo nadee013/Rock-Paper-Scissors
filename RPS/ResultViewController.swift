@@ -18,32 +18,33 @@ class ResultViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         self.resultLabel.textAlignment = NSTextAlignment.Center
+        self.resultLabel.numberOfLines = 3
         
         switch (selectedValue, randomValue) {
             case ("Paper", "Rock"):
                 self.resultImage.image = UIImage(named: "PaperWins")
-                self.resultLabel.text = "Hurray....! Congractz...You win"
+                self.resultLabel.text = "Hurray....! Congractz...\n You win"
             
             case ("Paper", "Scissors"):
                 self.resultImage.image = UIImage(named: "ScissorsWins")
-                self.resultLabel.text = "Oops....! Sorry...You loose"
+                self.resultLabel.text = "Oops....! Sorry...\n You loose"
             
             case ("Rock", "Paper"):
                 self.resultImage.image = UIImage(named: "PaperWins")
-                self.resultLabel.text = "Oops....! Sorry...You loose."
+                self.resultLabel.text = "Oops....! Sorry...\n You loose."
             
             case ("Rock", "Scissors"):
                 self.resultImage.image = UIImage(named: "RockWins")
-                self.resultLabel.text = "Hurray....! Congractz...You win"
+                self.resultLabel.text = "Hurray....! Congractz...\n You win"
 
             case ("Scissors", "Paper"):
                 self.resultImage.image = UIImage(named: "ScissorsWins")
-                self.resultLabel.text = "Hurray....! Congractz...You win"
+                self.resultLabel.text = "Hurray....! Congractz...\n You win"
 
             case ("Scissors", "Rock"):
                 self.resultImage.image = UIImage(named: "RockWins")
                 self.resultLabel.textAlignment = NSTextAlignment.Center
-                self.resultLabel.text = "Oops....! Sorry...You loose"
+                self.resultLabel.text = "Oops....! Sorry...\n You loose"
 
             default :
                 self.resultImage.image = UIImage(named: "tie")
